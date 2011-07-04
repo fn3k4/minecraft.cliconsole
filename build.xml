@@ -1,0 +1,55 @@
+<project basedir="." name="Minecraft CLI Console Plugin">
+
+    <property name="plugin.name" value="CliConsole" />
+
+    <property name="jar.file.dir" location="${basedir}" />
+    <property name="jar.file.name" value="${plugin.name}.jar" />
+    <property name="jar.file" value="${jar.file.dir}/${jar.file.name}" />
+
+    <property name="build.dir" location="${basedir}/build" />
+    <property name="src.dir" location="${basedir}/src" />
+    <property name="lib.dir" location="${basedir}/lib" />
+
+    <property name="server.dir" location="${basedir}/test" />
+    <property name="server.plugins.dir" location="${server.dir}/plugins" />
+
+    <path id="build.classpath">
+        <fileset dir="${lib.dir}">
+            <include name="**/*.jar" />
+        </fileset>
+    </path>
+
+    <target name="clean">
+        <delete dir="${build.dir}" includes="**/**" />
+    </target>
+
+    <target name="compile" depends="clean">
+        <mkdir dir="${build.dir}" />
+        <javac srcdir="${src.dir}" destdir="${build.dir}" debug="true">
+            <include name="ru/**/*.java" />
+            <classpath refid="build.classpath" />
+        </javac>
+        <copy todir="${build.dir}">
+            <fileset dir="${src.dir}">
+                <include name="plugin.yml" />
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="jar" depends="compile">
+        <jar destfile="${jar.file}" basedir="${build.dir}">
+        </jar>
+    </target>
+
+    <target name="deploy" depends="jar">
+        <copy todir="${server.plugins.dir}" file="${jar.file}" />
+
+        <mkdir dir="${server.plugins.dir}/${plugin.name}" />
+        <copy todir="${server.plugins.dir}/${plugin.name}">
+            <fileset dir="${src.dir}">
+                <include name="config.yml" />
+            </fileset>
+        </copy>
+    </target>
+
+</project>

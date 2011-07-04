@@ -1,0 +1,7 @@
+name: CliConsole
+main: com.github.fn3k4j.minecraft.cliconsole.CliConsolePlugin
+version: 1.1
+commands:
+  cliconsoleversion:
+    description: Shows you version of the installed plugin
+    usage: /cliconsoleversion
