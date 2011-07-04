@@ -1,0 +1,1 @@
+place craftbukkit-...jar here
