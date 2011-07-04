@@ -1,1 +1,1 @@
-place craftbukkit-...jar here
+place craftbukkit-...jar here and rename it to minecraft_server.jar
