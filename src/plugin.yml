@@ -1,5 +1,5 @@
 name: CliConsole
-main: com.github.fn3k4j.minecraft.cliconsole.CliConsolePlugin
+main: com.github.fn3k4.minecraft.cliconsole.CliConsolePlugin
 version: 1.1
 commands:
   cliconsoleversion:

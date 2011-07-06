@@ -1,10 +1,10 @@
 /**
  * Abstract: CliConsolePlugin.java
  *
- * @author: fn3k4j
+ * @author: fn3k4
  * @date: Apr 18, 2011
  */
-package com.github.fn3k4j.minecraft.cliconsole;
+package com.github.fn3k4.minecraft.cliconsole;
 
 import java.util.logging.Logger;
 

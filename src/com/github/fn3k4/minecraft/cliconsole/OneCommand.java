@@ -1,10 +1,10 @@
 /**
  * Abstract: CliConsoleMain.java
  *
- * @author: fn3k4j
+ * @author: fn3k4
  * @date: Mar 11, 2011
  */
-package com.github.fn3k4j.minecraft.cliconsole;
+package com.github.fn3k4.minecraft.cliconsole;
 
 import javax.management.MBeanServerConnection;
 import javax.management.ObjectName;

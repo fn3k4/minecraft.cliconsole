@@ -1,10 +1,10 @@
 /**
  * Abstract: CliConsole.java
  *
- * @author: fn3k4j
+ * @author: fn3k4
  * @date: Mar 11, 2011
  */
-package com.github.fn3k4j.minecraft.cliconsole;
+package com.github.fn3k4.minecraft.cliconsole;
 
 import java.io.IOException;
 import java.lang.management.ManagementFactory;
@@ -87,7 +87,7 @@ public class CliConsole extends NotificationBroadcasterSupport implements CliCon
     }
 
     /**
-     * @see com.github.fn3k4j.minecraft.cliconsole.CliConsoleMXBean#receiveCommand(java.lang.String)
+     * @see com.github.fn3k4.minecraft.cliconsole.CliConsoleMXBean#receiveCommand(java.lang.String)
      */
     @Override
     public void receiveCommand(String cmd) {

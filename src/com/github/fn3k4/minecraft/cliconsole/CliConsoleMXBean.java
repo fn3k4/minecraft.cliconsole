@@ -1,10 +1,10 @@
 /**
  * Abstract: ICommandReceiver.java
  *
- * @author: fn3k4j
+ * @author: fn3k4
  * @date: Mar 11, 2011
  */
-package com.github.fn3k4j.minecraft.cliconsole;
+package com.github.fn3k4.minecraft.cliconsole;
 
 /**
  * 

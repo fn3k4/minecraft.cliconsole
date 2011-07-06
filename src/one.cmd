@@ -1,3 +1,3 @@
 @echo off
 
-start java -cp plugins/CliConsole.jar com.github.fn3k4j.minecraft.cliconsole.OneCommand %1
+start java -cp plugins/CliConsole.jar com.github.fn3k4.minecraft.cliconsole.OneCommand %1

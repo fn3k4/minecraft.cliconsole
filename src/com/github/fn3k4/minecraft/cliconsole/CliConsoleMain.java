@@ -1,10 +1,10 @@
 /**
  * Abstract: CliConsoleMain.java
  *
- * @author: fn3k4j
+ * @author: fn3k4
  * @date: Mar 11, 2011
  */
-package com.github.fn3k4j.minecraft.cliconsole;
+package com.github.fn3k4.minecraft.cliconsole;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -31,7 +31,7 @@ public class CliConsoleMain extends ThreadModule {
     private int fieldPort = 9999;
 
     /**
-     * @see com.github.fn3k4j.minecraft.cliconsole.ThreadModule#run()
+     * @see com.github.fn3k4.minecraft.cliconsole.ThreadModule#run()
      */
     @Override
     public void run() {

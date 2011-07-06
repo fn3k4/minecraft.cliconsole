@@ -1,4 +1,4 @@
-package com.github.fn3k4j.minecraft.cliconsole;
+package com.github.fn3k4.minecraft.cliconsole;
 
 /**
  * This class implements Runnable interface
